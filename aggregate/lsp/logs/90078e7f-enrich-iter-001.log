@@ -1,0 +1,17 @@
+[2026-04-09T20:19:42Z] === ENRICH ITERATION 1 START | repo=lydell/eslint-plugin-simple-import-sort sha=90078e7f ===
+[2026-04-09T20:19:42Z] [iter=1] PHASE START: enrich repo=lydell/eslint-plugin-simple-import-sort sha=90078e7f runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/90078e7f-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/90078e7fce900b6860ab7cd1800c6ff055601d88.nq.gz
+[2026-04-09T20:19:50Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=83 MB
+[2026-04-09T20:19:51Z] [iter=1] AST store loaded triples=85147 load_secs=1 mem_mb=217 MB
+[2026-04-09T20:19:51Z] [iter=1] Step 2: Finding LSP targets mem_mb=217 MB
+[2026-04-09T20:19:51Z] [iter=1] LSP targets found call_sites=615 imports=230 extends=0 implements=0 secs=0
+[2026-04-09T20:19:51Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=217 MB
+[2026-04-09T20:19:52Z] [iter=1] Position index built positions=6430 nodes_with_types=7220 secs=0 mem_mb=217 MB
+[2026-04-09T20:19:52Z] [iter=1] Step 3: Starting LSP resolution mem_mb=217 MB already_completed_types=[] already_completed_files=0
+[2026-04-09T20:19:52Z] [iter=1] Resolving target type target_type=call_site count=615
+[2026-04-09T20:20:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=14 resolved=3 errors=570 current=examples/typescript.ts
+[2026-04-09T20:20:14Z] [iter=1] Target type resolved target_type=call_site resolved=3 errors=571 secs=22 mem_mb=217 MB
+[2026-04-09T20:20:14Z] [iter=1] Resolving target type target_type=import_statement count=230
+[2026-04-09T20:20:18Z] [iter=1] Target type resolved target_type=import_statement resolved=91 errors=0 secs=4 mem_mb=217 MB
+[2026-04-09T20:20:22Z] [iter=1] Step 5: Writing final enrichment file triples=7779
+[2026-04-09T20:20:22Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/90078e7fce900b6860ab7cd1800c6ff055601d88.nq.gz size_kb=126
+[2026-04-09T20:20:22Z] [iter=1] PHASE END: enrich elapsed_s=39 elapsed_min=0.7 total_triples=7779
